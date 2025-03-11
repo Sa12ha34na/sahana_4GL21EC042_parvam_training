@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+   <form method="post" action="">
+        <input type="hidden" name="secret_id" id="secret_id" value="Bond-007">
+        <label for="usn">USN:</label>
+        <input type="text" name="usn" id="usn" value="4GL21EC042" readonly><br><br>
+        <label for="first_name">First Name:</label>
+         <input  type="text" name="first_name" id="first_name"maxlength="10" placeholder="Enter your name" required><br><br>
+        <label for="middle_name">Middle Name:</label>
+         <input  type="text" name="middle_name" id="middle_name" placeholder="Enter your middle name"><br><br>
+        <label for="last_name">Last Name:</label>
+         <input  type="text" name="last_name" id="last_name" placeholder="Enter your last name"><br><br>
+
+        <label for="email_id">Email ID:</label>
+         <input type="email" name="email_id" id="email_id" placeholder="Enter your email_id" autofocus><br><br>
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="password" placeholder="Enter 8 digit password"><br><br>
+
+        <label for="phone_number">Phone_Number:</label>
+         <input type="tel" name="phone_number" id="phone_number"maxlength="10" value="+91-9876543210" disabled><br><br>
+
+        <label for="age">Age:</label>  
+         <input type="number" name="age" id="age" step="2" placeholder="Enter your age" ><br><br>
+
+        <label for="dob">DOB:</label> 
+         <!-- <input type="date" name="dob" id="dob"min="2000-01-01"><br><br> -->
+         <input type="date" name="dob" id="dob"max="2025-19-1"><br><br>
+        <label for="birthday_week">Birthday Week:</label> 
+         <input type="week" name="birthday_week" id="birthday_week"><br><br>
+        <label for="birthday_month">Birthday Month:</label> 
+         <input type="month" name="birthday_month" id="birthday_month"><br><br>
+        <label for="birthday_time">Birthday Time:</label> 
+         <input type="time" name="birthday_time" id="birthday_time"><br><br>
+        <label for="dob_time">DOB with Birthday Time:</label> 
+         <input type="datetime-local" name="dob_time" id="dob_time"><br><br>
+
+        <label for="gender">Gender:</label> 
+         <input type="radio" name="gender" id="male" value="M">
+        <label for="male">Male:</label> 
+         <input type="radio" name="gender" id="female" value="F">
+        <label for="female">Female:</label> 
+         <input type="radio" name="gender" id="others" value="O">
+        <label for="others">Others</label><br><br>
+
+        <label for="subjects">Favourite Subjects:</label> 
+         <input type="checkbox" name="subjects1" id="maths" value="maths">
+        <label for="maths">Mathematicss:</label> 
+         <input type="checkbox" name="subjects2" id="social_science" value="Social Science">
+        <label for="social_science">Social_Science:</label> 
+         <input type="checkbox" name="subjects3" id="science" value="Science">
+        <label for="science">Science</label>
+        <input type="checkbox" name="subjects4" id="kannada" value="Kannada">
+        <label for="kannada">Kannada</label><br><br>
+    
+        <label for="photo">Photo</label>
+        <!-- <input type="file" name="upload photo" id="upload photo" multiple accept="image/*"><br><br> -->
+        <!-- <input type="file" name="upload photo" id="upload photo" multiple accept="image/png"><br><br> -->
+        <!-- <input type="file" name="upload photo" id="upload photo" multiple accept="application/pdf"><br><br> -->
+        <input type="file" name="upload photo" id="upload photo" multiple accept="application/docs"><br><br>
+
+        <label for="state">Select State</label>
+        <!-- <select name="state" id="state"> -->
+        <select name="state" id="state" multiple>
+            <option value="KA">Karnataka</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="KL">Kerala</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MP">Madhya Pradesh</option>
+         </select><br><br>
+
+         <label for="rating">Give your Rating</label>
+         <input type="range" name="rating" id="rating" min="0" max="100"><br><br>
+         <label for="adress">Address</label>
+        <textarea name="adress" id="adress" rows="10" cols="40"></textarea><br><br>
+         <label for="color">Select your Favorite Color</label>
+        <input type="color" name="color" id="color"><br><br>
+         
+         <input type="reset" value="Clear" >
+         <input type="submit" value="Submit" >
+
+        <!-- <input type="submit">
+        <input type="reset"> -->
+   </form> 
+</body>
+</html>
