@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Playwrite IT Moderna;
+            src: url('../font/PlaywriteITModerna-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: Oswald;
+            src: url('../font/Oswald-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url('../font/Poppins-BlackItalic.ttf');
+        }
+        p{ /* Because of Element selector we are getting repetitive style */
+            color:white;
+            background-color: burlywood;
+            padding: 10px;
+            text-align: justify;
+        }
+        /* syntax for class selector : ".class_name" */
+        .para-one{
+            color: navy;
+            background: greenyellow;
+        }
+        .para-tw0{
+            color: black;
+            background: rgb(196, 222, 255);
+        }
+        .para-three{
+            color: white;
+            background: green;
+        }
+        .para-four{
+            color: aliceblue;
+            background: purple;
+        }
+        .heading-1{
+            font-size: 60px;
+            font-weight: lighter;
+            font-family: Oswald;
+            /* font-family: "Poppins", serif; */
+            background-image: radial-gradient(cyan,rgb(84, 164, 225),rgba(126, 0, 128, 0.584));
+            /* we can apply 4 values text-align property: left(default),right,center & justify. */
+            text-align: center;
+            /* we can apply underline,overline, & line-through */
+            text-decoration: dashed;
+        }
+        .heading-2{
+            font-size: 50px;
+            font-weight: lighter;
+            font-family: Playwrite IT Moderna;
+        }
+        .heading-3{
+            font-size: 30px;
+            font-family: Poppins;
+            /* we can apply 3 values: uppercase,lowercase & capitalize. */
+            text-transform: capitalize;
+            letter-spacing: 4px;
+            word-spacing: 10px;
+        }
+        .some-para{
+            text-align: justify;
+            background-image: radial-gradient(cyan,rgb(84, 164, 225),rgba(126, 0, 128, 0.584));
+            line-height: 1.8;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <p class="para-one">This is a Paragraph.</p>
+    <P class="para-tw0">This is a second Paragraph.</P>
+    <p class="para-three">This is a third Paragraph.</p>
+    <h1 class="para-one heading-1">Heading</h1>
+    <p class="para-four">The above written tag indicates the heading.</p>
+    <ol class="para-tw0">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ol>
+    <h2 class="para-tw0 heading-2">Heading 1</h2>
+    <h3 class="para-three heading-3">This is a smaller heading</h3>
+    <p class="some-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, non dolore ipsam, quia laborum debitis maxime suscipit eum sed odio consequuntur voluptas sunt saepe cupiditate quam, tempora veritatis iusto numquam ducimus odit eveniet. Magni maxime odio assumenda exercitationem ut voluptates dignissimos praesentium consectetur consequatur officia cum unde natus modi repudiandae sequi eius, accusamus quaerat reprehenderit? Omnis tempore, a consequatur nemo hic veritatis eveniet impedit delectus aliquam! Eum, quod recusandae. Natus corporis ex reprehenderit eligendi amet totam pariatur est fugit, beatae delectus temporibus laborum magni tenetur error quo, hic ad. Suscipit debitis hic obcaecati odio sequi repudiandae deleniti rem asperiores odit adipisci est sunt quidem ad optio fugiat fuga inventore, at aut eveniet illum. Nihil voluptatem, perspiciatis, iste rem quisquam illo tenetur magnam iusto, et velit officiis debitis commodi voluptates exercitationem quae omnis voluptatum. Esse, reprehenderit! Minus vel dolorum nesciunt praesentium numquam, dolor ducimus distinctio veritatis magnam facilis iure nostrum natus nemo delectus consequatur, quasi illum. Reiciendis voluptatum, recusandae obcaecati maiores, inventore repellat velit tempora tenetur repudiandae veniam similique tempore consequuntur alias commodi possimus, voluptatem ratione temporibus excepturi ipsam quia quae eligendi doloribus aperiam! Maiores, quaerat ab? Quasi, autem quis nobis doloribus quibusdam dolorum necessitatibus quidem animi? Illo minima aliquam delectus?</p>
+    <a href="https://www.parvamm.com">ParvaM</a>
+    <a href="https://www.parvamm.com">ParvaM</a>
+
+    <div>This is a div block of code.</div>
+    <div>This is another div block of code.</div>
+    <span>This is a span block of code.</span>
+    <span>This is another span bliock of code.</span>
+    <!-- We have 2 types of elements in HTML.
+    They are: Block elements & Inline elements -->
+    <h1>This a heading</h1>
+    <h1>This another heading</h1>
+    <p style="color:black; background-image:linear-gradient( rgba(10, 10, 219, 0.725),rgba(24, 218, 166, 0.455));">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officia sequi fugiat, animi mollitia laboriosam quod atque eos quis reprehenderit provident. Aut libero rem dolorum repellendus omnis aliquam nihil. Nulla, officia ex? Ipsum pariatur suscipit, dolore error, totam quod voluptas veritatis delectus perferendis itaque aut excepturi earum eligendi, distinctio eos!</p>
+    <p style="color:black; background-image:linear-gradient( rgba(16, 16, 128, 0.559),rgba(182, 39, 182, 0.455));">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et assumenda nostrum sequi omnis expedita dolores sit rem! Cupiditate, minus tempore. Quasi nisi sit cupiditate ullam quis amet unde est veniam velit reiciendis veritatis placeat quo, fugiat, odio cumque sint quisquam quas enim culpa delectus non ad ratione esse. Vel, voluptas.</p>
+
+</body>
+</html>

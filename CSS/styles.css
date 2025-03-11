@@ -1,0 +1,31 @@
+/* css can't work stand alone */
+.parent{
+    border: 2px solid brown;
+    display: flex;
+    height: 1000px;
+    /* justify-content handles the horizontal direction or x-plane : flex-start(start), flex-end & center */
+    /* Space has 3 type: space-between, space-around, space-evenly */
+    justify-content: space-between;
+    /* align-items handles the vertical direction or y-axis plane */
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 100px;
+}
+.child{
+    width: 150px;
+    height: 100px;
+    background-color: darkmagenta;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+@media(max-width: 575px){
+    body{
+        flex-wrap: wrap;
+    }
+}
+#box-1{
+    flex-shrink: 0;
+}

@@ -1,0 +1,51 @@
+.parent{
+    border: 1px solid black;
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 200px;
+}
+.child{
+    background-color: crimson;
+    border: 1px solid blue;
+    font-size: 40px;
+    color: white;
+    /* when child is present we can use flex to make center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child-2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.child-3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.child-4{
+    /* grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;   */
+
+    /* One more shortend property 
+    Syntax: grid-area: row-start /column-start /row-end /column-end  */
+    grid-area: 1/5/6/6;
+}
+.child-5{
+    /* grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+     */
+    /* shortand property  */
+    /* Syntax: grid-row start / end; */
+    grid-row: 3 / 6;
+    /* Syntax: grid-coluumn: start / end; */
+    grid-column:1 / 3;
+}

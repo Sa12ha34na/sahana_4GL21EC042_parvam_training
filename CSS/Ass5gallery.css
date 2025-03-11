@@ -1,0 +1,95 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    background: #f2f2f2;
+    overflow: auto;
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 390px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.heading{
+    text-align: center;
+}
+
+.parent{
+    /* border: 1px solid black;
+    background-color: burlywood; */
+    display: grid;
+    grid-template-rows: repeat(15, 250px);
+    grid-template-columns: repeat(15, 250px);
+}
+.child{
+    /* background-color: crimson; */
+    border: 2px solid blue;
+    font-size: 40px;
+    color: white;
+    /* when child is present we can use flex to make center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child-1{
+    grid-area: 1/3/1/2;
+    background-image: url(../media/nature.jpg);
+    background-position: center 50%;
+}
+.child-2{
+    grid-area: 2/5/3/7;
+    background-image: url(../media/coffee-plantation.jpg);
+    background-position: center 50%;
+}
+.child-3{
+    grid-area: 2/3/4/4;
+    background-image: url(../media/coffee.jpg);
+    background-position: center 50%;
+}
+.child-4{
+    grid-area: 3/1/4/3;
+    background-image: url(../media/);
+    background-position: center 50%;
+}
+.child-5{
+    grid-area: 2/1/3/3;
+    background-image: url(../media/Madikeri_Omkareshwara_Temple1.jpg);
+    background-position: center 50%;
+}
+.child-6{
+    grid-area: 1/1/2/2;
+    background-image: url(../media/rajaseat.jpg);
+    background-position: center 50%;
+}
+.child-7{
+    grid-area: 1/2/2/4;
+    background-image: url(../media/peak.jpg);
+    background-position: center 50%;
+}
+.child-8{
+    grid-area: 4/4/3/7;
+    background-image: url(../media/Talakaveri.jpg);
+    background-position: center 50%;
+}
+.child-9{
+    grid-area: 1/4/3/5;
+    /* background-image: url(../media/parvam\ _Logo.png); */
+    background-color: rgba(255, 235, 205, 0.597);
+    background-position: center 50%;
+}
+.child-10{
+    grid-area: 1/5/2/7;
+    background-image: url(../media/buddhism.jpg);
+    background-position: center 50%;
+}
+
+
+

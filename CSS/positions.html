@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .parent{
+            border: 1px solid black;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(rgba(67, 17, 230, 0.362), rgb(228, 35, 216));
+            display: inline-block;
+        }
+        .child-1{
+            /* static position is default for all elements */
+            position: static;
+        }
+        .child-2{
+            /* move the elements from original position to another position using directions */
+            position: relative;
+            top: 200px;
+            left: 30px;
+        }
+        .child-3{
+            position: relative;
+            top: 50px;
+            left: 80px;
+        }
+        .grand-child{
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(rgb(86, 240, 148),rgb(208, 228, 29));
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .child-4{
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+        .second-grand-child{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: linear-gradient(rgba(18, 42, 227, 0.905),rgb(35, 152, 242),rgb(41, 50, 52));
+            top: 20px;
+        }
+        .father{
+            width: 500px;
+            height: 300px;
+            background-image: linear-gradient(rgba(255, 0, 0, 0.401),rgba(21, 212, 66, 0.445),rgba(0, 0, 255, 0.484));
+            margin-top: 300px;
+            position: relative;
+            /* position: absolute; */
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+        }
+        .son-1{
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            background-image: linear-gradient(rgb(134, 230, 25),blue);
+        }
+        .son-2{
+            position: absolute;
+            top: 100px;
+            left: 550px;
+            background-image: linear-gradient(rgba(93, 50, 93, 0.888),rgb(207, 19, 72));
+        }
+        .son-3{
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            background-color: rgb(247, 25, 62);
+        }
+        i{
+            padding: 10px;
+        }
+        
+        .social-media{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            margin-top: 20px;
+            position: fixed;
+            top: 200px;
+            right: 20px;
+        }
+        .contact_us{
+            padding: 20px;
+            margin-top: 200px;
+            text-align: center;
+            border: 10px groove rgb(161, 18, 197);
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Position property: Sticky -->
+    <div class="contact_us">
+        <i>📞 -987643210</i>
+        <i>📍 -ParvaM</i>
+        <i>💌 -support@parvamm.com</i>
+        <i>🌐 -www.parvamconsultech.com</i>
+    </div>
+    <div class="parent">
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+        <div class="child child-3">
+            <div class="child grand-child"></div>
+        </div>
+        <div class="child child-4">
+            <div class="child second-grand-child"></div>
+        </div>
+    </div>
+        <div class="father">
+            <div class="son son-1"></div>
+            <div class="son son-2"></div>
+            <div class="son son-3"></div>
+        </div>
+        <!-- Position property: fixed -->
+        <div class="social-media">
+            <!-- emoji-symbol: windows + . -->
+            <i>👍</i>
+            <p>Like</p>
+            <i>💬</i>
+            <p>Comment</p>
+            <i>🔔</i>
+            <p>Subscribe</p>
+            <!-- <i>(❁´◡`❁) ◉_◉ (⓿_⓿) (✿◕‿◕✿)</i> -->
+        </div>
+</body>
+</html>
