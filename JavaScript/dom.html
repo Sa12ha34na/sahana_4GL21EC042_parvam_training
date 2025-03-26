@@ -1,0 +1,47 @@
+<!-- Dom(Document Object Model) : manipulating the HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <h1 id="heading">Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate libero repellendus officia quisquam reprehenderit id non voluptatibus tempora deleniti! Modi unde, eos tempore repellat consequuntur commodi in sit repellendus mollitia recusandae inventore beatae eaque placeat autem perferendis repudiandae aliquid nihil dignissimos maxime facilis ex? Magni dolor fuga animi. Ad, voluptatem.</p> -->
+    <!-- <script>
+        // const heading = document.getElementById("heading");
+        // // heading.innerHTML = "DOM Heading";
+        // console.log(heading);
+
+        // // We can acces complete HTML Document
+        // const doc = document;
+        // console.log(doc);
+
+        // // we can access complete Body Structure
+        // const body = document.getElementsByTagName("body");
+        // console.log(body);
+    </script> -->
+    <script>
+        const root = document.getElementById("root");
+        const heading = document.createElement("h1");
+        const para = document.createElement("p");
+        // const document = document;
+
+        document.title = "Dom document";
+
+        heading.innerHTML = "Hello World";
+        heading.style.color = "red";
+        heading.style.backgroundColor = "yellow";
+        heading.style.textAlign = "center";
+
+        para.innerHTML = "This is pargraph";
+
+        root.append(heading);
+        root.append(para);
+
+        console.log(root);
+    </script>
+</body>
+</html>
